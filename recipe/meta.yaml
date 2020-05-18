@@ -12,7 +12,7 @@ source:
     - fix-address-of-temp-var.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
