@@ -1,5 +1,5 @@
 {% set name = "lsdtopotools" %}
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,10 @@ package:
 
 source:
   url: https://github.com/LSDtopotools/LSDTopoTools2/archive/v{{ version }}.tar.gz
-  sha256: 79fb9a55adcdbae03d54e3c50c64c905b6c4780074724bd360808ae8089a318f
-  patches:
-    - fix-address-of-temp-var.patch
+  sha256: ff52e5812bc28a062ccab365f83d1871cbea3012a95e450aa2190a22f0a7aa16
 
 build:
-  number: 2
+  number: 0
   skip: True  # [win]
 
 requirements:
