@@ -20,11 +20,9 @@ requirements:
     - make
   host:
     - fftw
-    - gdal
     - pcl
   run:
     - fftw
-    - gdal
     - pcl
 
 about:
