@@ -1,5 +1,5 @@
 {% set name = "lsdtopotools" %}
-{% set version = "0.4" %}
+{% set version = "0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/LSDtopotools/LSDTopoTools2/archive/v{{ version }}.tar.gz
-  sha256: ff52e5812bc28a062ccab365f83d1871cbea3012a95e450aa2190a22f0a7aa16
+  sha256: 2e8f9fb281d60335f4b69111a16979c0ea3f69935529ac4f00e9d38ddbfb6373
 
 build:
-  number: 2
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -20,11 +20,9 @@ requirements:
     - make
   host:
     - fftw
-    - gdal
     - pcl
   run:
     - fftw
-    - gdal
     - pcl
 
 about:
@@ -32,7 +30,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: "LSDTopoTools is a software package for analysing topography"
+  summary: LSDTopoTools is a software package for analysing topography
   description: |
     LSDTopoTools is a software package for analysing topography. Applications
     of these analyses span hydrology, geomorphology, soil science, ecology,
