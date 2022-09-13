@@ -154,4 +154,5 @@ Feedstock Maintainers
 =====================
 
 * [@mcflugen](https://github.com/mcflugen/)
+* [@simon-m-mudd](https://github.com/simon-m-mudd/)
 
