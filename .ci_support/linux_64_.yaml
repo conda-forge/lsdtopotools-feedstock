@@ -7,17 +7,10 @@ channel_targets:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '9'
+- '10'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 fftw:
 - '3'
-gdal:
-- '3.4'
-pin_run_as_build:
-  fftw:
-    max_pin: x
-  gdal:
-    max_pin: x.x
 target_platform:
 - linux-64

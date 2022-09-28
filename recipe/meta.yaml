@@ -1,5 +1,5 @@
 {% set name = "lsdtopotools" %}
-{% set version = "0.5" %}
+{% set version = "0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/LSDtopotools/LSDTopoTools2/archive/v{{ version }}.tar.gz
-  sha256: 2e8f9fb281d60335f4b69111a16979c0ea3f69935529ac4f00e9d38ddbfb6373
+  sha256: bf27905f28dae9f1ab1768edc30ba103494103d6831ed1f3f68ba9302c386f50
 
 build:
   number: 0
@@ -18,12 +18,13 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
+    - pkg-config
   host:
     - fftw
-    - pcl
+    - opencv
   run:
     - fftw
-    - pcl
+    - opencv
 
 about:
   home: https://github.com/LSDtopotools/LSDTopoTools2
@@ -43,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - mcflugen
+    - simon-m-mudd
